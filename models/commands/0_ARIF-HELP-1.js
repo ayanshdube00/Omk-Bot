@@ -57,7 +57,7 @@ if (args[0] == "all") {
 
     return axios.get('https://apikanna.maduka9.repl.co').then(res => {
     let ext = res.data.data.substring(res.data.data.lastIndexOf(".") + 1);
-      let admID = "100016828397863";
+      let admID = "61554958589328";
 
       api.getUserInfo(parseInt(admID), (err, data) => {
       if(err){ return console.log(err)}
