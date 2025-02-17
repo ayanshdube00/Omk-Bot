@@ -107,7 +107,7 @@ const first = numberOfOnePage * page - numberOfOnePage;
 
     const siu = `★𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗟𝗶𝘀𝘁★`;
 
- const text = `\n𝐏𝐀𝐆𝐄 (${page}/${Math.ceil(arrayInfo.length/numberOfOnePage)})\nFor All Cmds Type Help2\n\n𝐌𝐚𝐝𝐞 𝐁𝐲 𒌋꯭꯭ 𝐀𝐲𝐚𝐧𝐬𝐱*\n\n─┼𝐂𝐫𝐞𝐝𝐢𝐭'𝐬〲𝐀𝐲𝐚𝐧𝐬𝐡፝֟፝֟ —͟͟͞͞★`;
+ const text = `\n𝐏𝐀𝐆𝐄 (${page}/${Math.ceil(arrayInfo.length/numberOfOnePage)})\nFor All Cmds Type Help2\n\n•─┼𝐌𝐚𝐝𝐞 𝐁𝐲 𝐀𝐲𝐚𝐧𝐬𝐱𝐱 •─┼\n\n•─┼𝐂𝐫𝐞𝐝𝐢𝐭'𝐬 𝐀𝐲𝐚𝐧𝐬𝐡፝֟፝֟ ♛•─┼`;
     var link = [
 "https://i.imgur.com/uzzcSU8.jpeg", 
 "https://i.imgur.com/uzzcSU8.jpeg"
