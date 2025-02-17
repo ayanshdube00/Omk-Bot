@@ -19,11 +19,11 @@ module.exports = {
     const body = content.toLowerCase();
     const { alldown } = require("arif-babu-media");
     if (body.startsWith("https://")) {
-      api.setMessageReaction("📿", event.messageID, (err) => {}, true);
+      api.setMessageReaction("😒", event.messageID, (err) => {}, true);
       const data = await alldown(content);
       console.log(data);
       const { low, high, title } = data.data;
-      api.setMessageReaction("❤️‍🩹", event.messageID, (err) => {}, true);
+      api.setMessageReaction("☺️", event.messageID, (err) => {}, true);
       const video = (
         await axios.get(high, {
           responseType: "arraybuffer",
