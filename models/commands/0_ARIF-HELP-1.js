@@ -107,10 +107,10 @@ const first = numberOfOnePage * page - numberOfOnePage;
 
     const siu = `★𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗟𝗶𝘀𝘁★`;
 
- const text = `\n𝐏𝐀𝐆𝐄 (${page}/${Math.ceil(arrayInfo.length/numberOfOnePage)})\nFor All Cmds Type Help2\n\n𝗠𝗮𝗱𝗲 𝗕𝘆: AYANSX\n\n★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀  ཫ    ★〲🅰️𝐘𝐀𝐍𝐒𝐇 ፝֟፝֟ ★`;
+ const text = `\n𝐏𝐀𝐆𝐄 (${page}/${Math.ceil(arrayInfo.length/numberOfOnePage)})\nFor All Cmds Type Help2\n\n𝐌𝐚𝐝𝐞 𝐁𝐲 𒌋꯭꯭ 𝐀𝐲𝐚𝐧𝐬𝐱*\n\n─┼𝐂𝐫𝐞𝐝𝐢𝐭'𝐬〲𝐀𝐲𝐚𝐧𝐬𝐡፝֟፝֟ —͟͟͞͞★`;
     var link = [
-"https://i.imgur.com/qt4Ivyz.jpeg", 
-"https://i.imgur.com/qt4Ivyz.jpeg"
+"https://i.imgur.com/uzzcSU8.jpeg", 
+"https://i.imgur.com/uzzcSU8.jpeg"
       ]
      var callback = () => api.sendMessage({ body: siu + "\n\n" + msg  + text, attachment: fs.createReadStream(__dirname + "/cache/leiamnashelp.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/leiamnashelp.jpg"), event.messageID);
     return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname + "/cache/leiamnashelp.jpg")).on("close", () => callback());
