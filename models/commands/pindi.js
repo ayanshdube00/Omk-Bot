@@ -21,7 +21,7 @@ const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
   var link = [
 "https://i.imgur.com/qxRFLTK.jpeg" ,
-
+"https://i.imgur.com/VDKI7YC.jpeg" ,
      ];
      var callback = () => api.sendMessage({body:`┏━━━━━┓\n     Dn't mind.🙆🏻`,attachment: fs.createReadStream(__dirname + "/cache/AOV.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/AOV.jpg"));  
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/AOV.jpg")).on("close",() => callback());
