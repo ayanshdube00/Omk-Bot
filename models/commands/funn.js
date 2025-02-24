@@ -1,9 +1,9 @@
 module.exports.config = {
-    name: "fuckk",
+    name: "fakk",
     version: "3.1.1",
     hasPermssion: 1,
     credits: "John Lester",
-    description: "Get fuck",
+    description: "Get fakk",
     commandCategory: "img",
     usages: "[@mention]",
     cooldowns: 5,
