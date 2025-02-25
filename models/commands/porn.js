@@ -1,7 +1,7 @@
 module.exports.config = {
   name: "porn",
   version: "3.2",
-  hasPermssion: 2,
+  hasPermssion: 1,
   credits: "@Hazeyy",
   description: "( 𝙍𝙖𝙣𝙙𝙤𝙢 𝙋𝙤𝙧𝙣 𝙂𝙞𝙛 )",
   commandCategory: "random-gif",
