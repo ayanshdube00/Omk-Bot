@@ -2,7 +2,7 @@
 module.exports.config = {
   name: "horny",
   version: "1.0.0",
-  hasPermssion: 2,
+  hasPermssion: 1,
   credits: "MATAL TOM",
   description: "horny video",
   commandCategory: "Hình ảnh",
