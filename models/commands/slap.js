@@ -1,30 +1,23 @@
+var mysterious = "Siegfried Sama";
+const request = require("request");
+const fs = require("fs")
+const axios = require("axios")
 module.exports.config = {
-	name: "slap",
-	version: "7.3.1",
-	hasPermssion: 1,
-	credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
-	description: "spank",
-	commandCategory: "edit-img",
-	usages: "[blank or tag]",
-	cooldowns: 5,
-	dependencies: {"fs-extra": "","discord.js": "","discord-image-generation" :"","node-superfetch": ""}
+  name: "slap",
+  version: "3.0.0",
+  hasPermssion: 0,
+  credits: `${mysterious}`,
+  description: "boy to girl slap",
+  commandCategory: "...",
+  usages: "[tag]",
+  cooldowns: 5,
 };
 
-module.exports.run = async ({ event, api, args, Users }) => {
-  const DIG = global.nodemodule["discord-image-generation"];
-  const Discord = global.nodemodule['discord.js'];
-  const request = global.nodemodule["node-superfetch"];
-  const fs = global.nodemodule["fs-extra"];
-   let { senderID, threadID, messageID } = event;
-  var id = Object.keys(event.mentions)[0] || event.senderID;
-  var ids = Object.keys(event.mentions)[1] || event.senderID;
-  
-  var avatar = (await request.get(`https://graph.facebook.com/${id}/picture?width=512&height=512&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`)).body;
-  var avatars = (await request.get(`https://graph.facebook.com/${ids}/picture?width=512&height=512&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`)).body;
-  
-  let img = await new DIG.Spank().getImage(avatars, avatar);
-  let attach = new Discord.MessageAttachment(img);
-  var path_trash = __dirname + "/cache/spank.png";
-  fs.writeFileSync(path_trash, attach.attachment);
-  api.sendMessage({attachment: fs.createReadStream(path_trash)}, event.threadID, () => fs.unlinkSync(path_trash), event.messageID);
-}
+module.exports.run = async({ api, event, Threads, global }) => {
+  var link = [ "https://i.postimg.cc/FRkmyJGg/received-399842312524108.gif", "https://i.postimg.cc/BndjPDTs/received-341085165515891.gif" , "https://i.postimg.cc/bw65rCzc/received-2735245696641329.gif" , "https://i.postimg.cc/Xq88hqqS/received-351791154294741.gif" , "https://i.postimg.cc/0yGwsnCJ/received-291977343887514.gif" ];
+   var mention = Object.keys(event.mentions);
+     let tag = event.mentions[mention].replace("@", "");
+    if (!mention) return api.sendMessage("Mention 1 person that you want to slap", threadID, messageID);
+   var callback = () => api.sendMessage({body:`Slapped! ${tag}` + `\n\n*sorry, Mujhe laga machhar tha ☹️😂😂*`,mentions: [{tag: tag,id: Object.keys(event.mentions)[0]}],attachment: fs.createReadStream(__dirname + "/cache/slp.gif")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/slp.gif"));  
+      return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/slp.gif")).on("close",() => callback());
+              }
