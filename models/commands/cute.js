@@ -1,7 +1,7 @@
 module.exports.config = {
   name: "cute",
   version: "1.0.0",
-  hasPermssion: 0,
+  hasPermssion: 1,
   credits: "AYAN",
   description: "Projec M4a.",
   commandCategory: "Random-IMG",
