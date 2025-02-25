@@ -2,7 +2,7 @@
 module.exports.config = {
   name: "hots",
   version: "1.0.0",
-  hasPermssion: 2,
+  hasPermssion: 1,
   credits: "AYAN CHOWDHURY",
   description: "HOT VEDIO",
   commandCategory: "Random",
