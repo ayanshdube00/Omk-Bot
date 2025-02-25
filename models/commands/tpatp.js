@@ -2,7 +2,7 @@ const fs = require("fs");
 module.exports.config = {
 	name: "tapatp",
     version: "1.0.1",
-	hasPermssion: 0,
+	hasPermssion: 1,
 	credits: "FAIZ ANSARI", 
 	description: "hihihihi",
 	commandCategory: "no prefix",
