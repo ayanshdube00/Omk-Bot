@@ -1,25 +1,24 @@
 module.exports.config = {
-  name: "pair",
-  version: "1.0.1",
-  hasPermssion: 0,
-  credits: "ProCoderCyrus",
-  description: "Pair with people in the group",
-  usePrefix: true,
-  commandCategory: "For users",
-  cooldowns: 5,
-  dependencies: {
+        name: "pair",
+        version: "1.0.1",
+        hasPermssion: 0,
+        credits: "LEGEND ARYAN",
+        description: "MADE BY LEGEND ARYAN",
+        commandCategory: "Picture",
+        cooldowns: 5,
+        dependencies: {
         "axios": "",
         "fs-extra": ""
-  }
+    }
 }
 module.exports.onLoad = async() => {
     const { resolve } = global.nodemodule["path"];
     const { existsSync, mkdirSync } = global.nodemodule["fs-extra"];
     const { downloadFile } = global.utils;
     const dirMaterial = __dirname + `/cache/canvas/`;
-    const path = resolve(__dirname, 'cache/canvas', 'annu.png');
+    const path = resolve(__dirname, 'cache/canvas', 'pairing.png1');
     if (!existsSync(dirMaterial + "canvas")) mkdirSync(dirMaterial, { recursive: true });
-    if (!existsSync(path)) await downloadFile("https://i.imgur.com/WdirrtE.jpg", path);
+    if (!existsSync(path)) await downloadFile("https://i.imgur.com/wvtSGoi.jpeg", path);
 }
 
 async function makeImage({ one, two }) {
@@ -29,7 +28,7 @@ async function makeImage({ one, two }) {
     const jimp = global.nodemodule["jimp"];
     const __root = path.resolve(__dirname, "cache", "canvas");
 
-    let pairing_img = await jimp.read(__root + "/annu.png");
+    let pairing_img = await jimp.read(__root + "/pairing.png1");
     let pathImg = __root + `/pairing_${one}_${two}.png`;
     let avatarOne = __root + `/avt_${one}.png`;
     let avatarTwo = __root + `/avt_${two}.png`;
@@ -42,7 +41,7 @@ async function makeImage({ one, two }) {
 
     let circleOne = await jimp.read(await circle(avatarOne));
     let circleTwo = await jimp.read(await circle(avatarTwo));
-    pairing_img.composite(circleOne.resize(248, 255), 57, 240).composite(circleTwo.resize(250, 250), 420, 240);
+    pairing_img.composite(circleOne.resize(258, 258), 116, 110).composite(circleTwo.resize(247, 247), 479, 115);
 
     let raw = await pairing_img.getBufferAsync("image/png");
 
@@ -58,11 +57,11 @@ async function circle(image) {
     image.circle();
     return await image.getBufferAsync("image/png");
 }
-module.exports.run = async function({ api, event, args, models, Users, Threads, Currencies, permssion }) {
-  const { threadID, messageID, senderID } = event;
-    const { readFileSync, writeFileSync } = require("fs-extra")
+module.exports. run = async function({ api, event, args, Users, Threads, Currencies }) {
+  const axios = require("axios");
     const fs = require("fs-extra");
-    var tl = ['21%','11%','55%','89%','22%','45%','1%','4%','78%','15%','91%','77%','41%','32%', '67%', '19%', '37%', '17%', '96%', '52%', '62%', '76%', '83%', '100%', '99%', "0%", "48%"];
+    const { threadID, messageID, senderID } = event;
+    var tl = ['21%', '67%', '19%', '37%', '17%', '96%', '52%', '62%', '76%', '83%', '100%', '99%', "0%", "48%"];
         var tle = tl[Math.floor(Math.random() * tl.length)];
         let dataa = await api.getUserInfo(event.senderID);
         let namee = await dataa[event.senderID].name
@@ -76,7 +75,7 @@ module.exports.run = async function({ api, event, args, models, Users, Threads, 
                 arraytag.push({id: id, tag: name});
 
         var sex = await data[id].gender;
-        var gender = sex == 2 ? "Male🧑" : sex == 1 ? "Female👩‍🦰" : "Trần Đức Bo";
+        var gender = sex == 2 ? "Male🧑" : sex == 1 ? "Female👩‍  " : "Tran Duc Bo";
 var one = senderID, two = id;
-    return makeImage({ one, two }).then(path => api.sendMessage({ body: `‎‎‎‎‎⚜️ 🄼🄰🄳🄴 🄱🅈 🄰🅈🄰🄽🅂🄷 ⚜️ \n`, mentions: arraytag, attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
-  }
+    return makeImage({ one, two }).then(path => api.sendMessage({ body: `✦ ━━━━━━━ 💝 ━━━━━━━ ✦\n➻ 𝐍𝗔ɱɘ ✦  ${namee} \n➻ 𝐍𝗔ɱɘ ✦  ${name} \n✦ ━━━━━━━ 💝 ━━━━━━━ ✦\n🌸🍁The odds are: 〘${tle}〙`, mentions: arraytag, attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
+}
