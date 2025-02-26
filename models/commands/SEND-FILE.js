@@ -1,5 +1,5 @@
 module.exports.config = {
-    name: "adc",
+    name: "send",
     version: "1.0.0",
     hasPermssion: 2,
     credits: "ARIF BABU",
