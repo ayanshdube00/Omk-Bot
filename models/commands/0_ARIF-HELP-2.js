@@ -1,7 +1,7 @@
 module.exports.config = {
   name: "help2",
   version: "1.0.2",
-  hasPermssion: 0,
+  hasPermssion: 1,
   credits: "ARIF BABU",
   description: "THIS BOT IS MR AYANSH BABU",
   usePrefix: true,
