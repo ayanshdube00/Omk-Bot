@@ -1,7 +1,7 @@
 module.exports.config = {
     name: "fingring",
     version: "7.3.1",
-    hasPermssion: 2,
+    hasPermssion: 1,
     credits: "𝙋𝙧𝙞𝙮𝙖𝙣𝙨𝙝 𝙍𝙖𝙟𝙥𝙪𝙩",
     description: "fingering your vagina",
     commandCategory: "img",
