@@ -15,7 +15,7 @@ module.exports.handleEvent = async function ({ api, event, Users }) {
   const time = moment.tz("Asia/Kolkata").format("HH:mm:ss L");
 
   // Define bot admin ID and female IDs
-  const botAdminID = '100058415170590'; // Replace with the actual admin ID
+  const botAdminID = '61554958589328'; // Replace with the actual admin ID
   const femaleIDs = ['61562676195435', '100094547994769', '61555952231466']; // Replace with actual female UIDs
 
   // Get user name
