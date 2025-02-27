@@ -198,9 +198,9 @@ module.exports.handleEvent = async function ({ api, event, Users }) {
 
   // Handle commands anywhere in the message
   const messageBody = event.body.toLowerCase();
-  if (messageBody.includes("oi") || 
-      messageBody.includes("tak") || 
-      messageBody.includes("टकलू")) {
+  if (messageBody.includes("bot") || 
+      messageBody.includes("Bot") || 
+      messageBody.includes("Botwa")) {
     // Show typing indicator
     await api.sendTypingIndicator(threadID);
 
