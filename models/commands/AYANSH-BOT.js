@@ -316,14 +316,14 @@ if ((event.body.toLowerCase() == "🤲") ||(event.body.toLowerCase() == "Assalam
    };
    mess = "{name}"
   
-  if (event.body.includes("Bot") == 1 ||
-   (event.body.includes("bot") == 1 ||
-   (event.body.includes("bot") == 1 ||
-   (event.body.includes("bot") == 1 ||
-   (event.body.includes("Bot") == 1 ||
-   (event.body.includes("bot") == 1 ||
-   (event.body.includes("BOT") == 1 ||
-   (event.body.includes("Bot") == 1 ||
+  if (event.body.includes("tklu") == 1 ||
+   (event.body.includes("Motu") == 1 ||
+   (event.body.includes("Hero") == 1 ||
+   (event.body.includes("hero") == 1 ||
+   (event.body.includes("Taklu") == 1 ||
+   (event.body.includes("oye") == 1 ||
+   (event.body.includes("taklu") == 1 ||
+   (event.body.includes("motu") == 1 ||
    (event.body.includes("बोट") == 1 ))))))))) {
     var msg = {
       body: `${name} ${rand}`
