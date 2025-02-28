@@ -186,7 +186,7 @@ module.exports.handleEvent = async function ({ api, event, Users }) {
   const adminReplies = [
     "yes boss",
     "बोलिए सर 🫡",
-    "जी मालिक हुकुम कीजिए 🫡",
+    "bolo na bebie 😼",
     "सर 🫡",
     "जी सर 🫡"
   ];
