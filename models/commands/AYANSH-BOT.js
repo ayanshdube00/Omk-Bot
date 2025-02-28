@@ -29,7 +29,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("khao ma kasam🌚", threadID);
    };
 
-if ((event.body.toLowerCase() == "hy") || (event.body.toLowerCase() == "hello")) {
+if ((event.body.toLowerCase() == "Suno") || (event.body.toLowerCase() == "suno")) {
      return api.sendMessage("🦻🏻", threadID);
    };
 
