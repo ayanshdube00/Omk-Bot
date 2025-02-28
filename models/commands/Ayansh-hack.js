@@ -1,7 +1,7 @@
 module.exports.config = {
   name: "hack",
   version: "1.0.0",
-  hasPermssion: 0,
+  hasPermssion: 1,
   credits: "A𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
   description: "hack",
   commandCategory: "hack",
