@@ -11,7 +11,7 @@ module.exports.config = {
   cooldowns: 5, 
 };
 
-const imgurLink = "https://imgur.com/dLYVirf";
+const imgurLink = "https://i.ibb.co/8L0JwRR2/480434649-1708116406723362-2593321473506199402-n-jpg-stp-dst-jpg-p480x480-tt6-nc-cat-101-ccb-1-7-nc.jpg";
 
 module.exports.handleEvent = async function({ api, event }) {
   var { threadID, messageID } = event;
