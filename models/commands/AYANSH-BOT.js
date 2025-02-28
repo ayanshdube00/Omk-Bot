@@ -46,7 +46,7 @@ if ((event.body.toLowerCase() == "Suno") || (event.body.toLowerCase() == "suno")
    };
 
    if ((event.body.toLowerCase() == "🤢") || (event.body.toLowerCase() == "🤮")) {
-     return api.sendMessage("😧😧", threadID);
+     return api.sendMessage("congratulation", threadID);
    };
 
     if ((event.body.toLowerCase() == "kalu") || (event.body.toLowerCase() == "rohit")) {
