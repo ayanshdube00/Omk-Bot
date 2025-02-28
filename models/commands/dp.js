@@ -1,8 +1,8 @@
 module.exports.config = {
-        name: "prf",
+        name: "dp",
         version: "1.0.0",
         hasPermssion: 1,
-        credits: "SHAAN KJAN",
+        credits: "Ayanx",
         description: "THIS BOT IS MADE BY AYANSX",
         commandCategory: "PROFILE DP",
         cooldowns: 0
