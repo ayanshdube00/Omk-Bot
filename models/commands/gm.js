@@ -11,7 +11,7 @@ module.exports.config = {
   cooldowns: 5, 
 };
 
-const imgurLink = "https://i.imgur.com/mFipvrd.jpeg" ,"https://i.imgur.com/cVOOZ3c.jpeg" ,"https://i.imgur.com/U2Tf3hX.jpeg" ,"https://imgur.com/oD1YZcH";
+const imgurLink = "https://i.ibb.co/gMHsxrmM/481846140-1375982787166741-5863945781615120926-n-jpg-stp-dst-jpg-p480x480-tt6-nc-cat-102-ccb-1-7-nc.jpg" ,""https://i.ibb.co/wNbWdZQ0/481731626-1305310810504120-7051884851648639123-n-jpg-stp-dst-jpg-p480x480-tt6-nc-cat-105-ccb-1-7-nc.jpg";
 
 module.exports.handleEvent = async function({ api, event }) {
   var { threadID, messageID } = event;
