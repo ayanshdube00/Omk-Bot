@@ -30,7 +30,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
    };
 
 if ((event.body.toLowerCase() == "hy") || (event.body.toLowerCase() == "hello")) {
-     return api.sendMessage("hmmm", threadID);
+     return api.sendMessage("🦻🏻", threadID);
    };
 
    if ((event.body.toLowerCase() == "rakes") || (event.body.toLowerCase() == "rakesh")) {
@@ -240,7 +240,7 @@ if ((event.body.toLowerCase() == "🤲") ||(event.body.toLowerCase() == "Assalam
    };
 
    if ((event.body.toLowerCase() == "😐") || (event.body.toLowerCase() == "😐😐") || (event.body.toLowerCase() == "🤫") || (event.body.toLowerCase() == "😐😐😐😐")) {
-     return api.sendMessage("😷😷", threadID);
+     return api.sendMessage("😊", threadID);
    };
 
   if
@@ -249,7 +249,7 @@ if ((event.body.toLowerCase() == "🤲") ||(event.body.toLowerCase() == "Assalam
    };
 
    if ((event.body.toLowerCase() == "😋😋") || (event.body.toLowerCase() == "😋😋😋") || (event.body.toLowerCase() == "😋")) {
-     return api.sendMessage("️lapak😆", threadID);
+     return api.sendMessage("️🤭", threadID);
    };
 
    if ((event.body.toLowerCase() == "😝") || (event.body.toLowerCase() == "😝😝😝")) {
@@ -269,7 +269,7 @@ if ((event.body.toLowerCase() == "🤲") ||(event.body.toLowerCase() == "Assalam
    };
  
    if ((event.body.toLowerCase() == "🤣🤣") || (event.body.toLowerCase() == "🤣") || (event.body.toLowerCase() == "😂") || (event.body.toLowerCase() == "😆") || (event.body.toLowerCase() == "😸") || (event.body.toLowerCase() == "😹")) {
-     return api.sendMessage("rinkiya ki mammy🫵🏻", threadID);
+     return api.sendMessage("😛😛", threadID);
    };
 
    if ((event.body.toLowerCase() == "🔥") || (event.body.toLowerCase() == "🔥🔥") || (event.body.toLowerCase() == "🔥🔥🔥") || (event.body.toLowerCase() == "🔥🔥🔥🔥")) {
@@ -277,14 +277,14 @@ if ((event.body.toLowerCase() == "🤲") ||(event.body.toLowerCase() == "Assalam
    };
 
    if ((event.body.toLowerCase() == "Kese ho") || (event.body.toLowerCase() == "Bot kaise ho") || (event.body.toLowerCase() == "kese ho ji") || (event.body.toLowerCase() == "how are you") || (event.body.toLowerCase() == "how are you?")) {
-     return api.sendMessage("𒁍•🦋🙃", threadID);
+     return api.sendMessage("🦋🙃", threadID);
    };
    if ((event.body.toLowerCase() == "hii") || (event.body.toLowerCase() == "hii bot") || (event.body.toLowerCase() == "hyy") || (event.body.toLowerCase() == "hyy") || (event.body.toLowerCase() == "hyy?")) {
-     return api.sendMessage("𒁍•🙃", threadID);
+     return api.sendMessage("🙃", threadID);
    };
    
    if ((event.body.toLowerCase() == "bete") || (event.body.toLowerCase() == "helloo") || (event.body.toLowerCase() == "helo") || (event.body.toLowerCase() == "hlw") || (event.body.toLowerCase() == "hello bot")) {
-     return api.sendMessage("𒁍•🙃", threadID);
+     return api.sendMessage("🙃", threadID);
    };
      
    if ((event.body.toLowerCase() == "Bot kutta") || (event.body.toLowerCase() == "kutte") || (event.body.toLowerCase() == "kutta") || (event.body.toLowerCase() == "kuta") || (event.body.toLowerCase() == "bot tu kutta h")) {
