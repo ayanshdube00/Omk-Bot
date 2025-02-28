@@ -1,28 +1,33 @@
-const fs = require("fs");
+const axios = require("axios");
+
 module.exports.config = {
-  name: "good night",
-    version: "1.1.1",
+  name: "gn",
+  version: "1.0.1",
   hasPermssion: 0,
-  credits: "ARIF BABU", 
-  description: "Just Respond",
+  credits: "Ayanshx", 
+  description: "hihihihi",
   commandCategory: "no prefix",
-    cooldowns: 5, 
+  usages: "mention",
+  cooldowns: 5, 
 };
 
-module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
+const imgurLink = "https://imgur.com/dLYVirf";
+
+module.exports.handleEvent = async function({ api, event }) {
   var { threadID, messageID } = event;
-  let react = event.body.toLowerCase();
-  if(react.includes("night") ||
-     react.includes("Night") || react.includes("शुभ रात्रि") || react.includes("NIGHT") ||
-react.includes("good night") ||
-react.includes("GOOD NIGHT")) {
-    var msg = {
-        body: `𝐆𝐎𝐎𝐃 𝐍𝐈𝐆𝐇𝐓 😴 𝐒𝐖𝐄𝐄𝐓 𝐃𝐑𝐄𝐀𝐌 😇`,attachment: fs.createReadStream(__dirname + `/ARIF-BABU/NIGHT.gif`)
-      }
+  if (event.body.startsWith("gud nyt") || event.body.startsWith("Good Night") || event.body.startsWith("good night") || event.body.startsWith("Gud nini")) {
+    try {
+      const response = await axios.get(imgurLink, { responseType: "stream" });
+      var msg = {
+        body: "",
+        attachment: response.data
+      };
       api.sendMessage(msg, threadID, messageID);
-    api.setMessageReaction("🌃", event.messageID, (err) => {}, true)
+      api.setMessageReaction("😏", messageID, (err) => {}, true);
+    } catch (error) {
+      console.error("Failed to fetch image:", error.message);
     }
   }
-  module.exports.run = function({ api, event, client, __GLOBAL }) {
+};
 
-  }
+module.exports.run = function({ api, event }) {};
