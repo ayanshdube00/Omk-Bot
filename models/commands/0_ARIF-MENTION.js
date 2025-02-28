@@ -10,7 +10,7 @@ module.exports.config = {
 };
 module.exports.handleEvent = function({ api, event }) {
   if (event.senderID !== "61554958589328") {
-    var aid = ["61554958589328","100094941194624", "100080287361043","100094941194624" , "100009293679350"];
+    var aid = ["61554958589328","", "","" , ""];
     for (const id of aid) {
     if ( Object.keys(event.mentions) == id) {
       var msg = ["Mujse bolo use mention ni😏", "Kya Hua muje btao😶", "Wo Shayad Busy h😐🙄", "usko mention ni kro 🤛🏻", "Kya Kam Hai mujhe batao na 😌", "ufff Kya pareshani he🤦🏻", "Kya kaam hai mujhse bolo🏋🏻", "sab pata chal raha hai 🙂" , "ky hua mujhe batao mai unko bta dunga 😶"];
