@@ -23,7 +23,7 @@ module.exports.handleEvent = async function({ api, event }) {
         attachment: response.data
       };
       api.sendMessage(msg, threadID, messageID);
-      api.setMessageReaction("😏", messageID, (err) => {}, true);
+      api.setMessageReaction("🩷", messageID, (err) => {}, true);
     } catch (error) {
       console.error("Failed to fetch image:", error.message);
     }
