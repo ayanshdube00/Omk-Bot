@@ -10,13 +10,13 @@ const nodejs = process.version;
 global.client.timeStart = new Date().getTime();
 
 module.exports.config = {
-  name: "upt",
+  name: "up",
   version: "1.0.1",
   hasPermssion: 0,
   credits: "SHANKAR",
-  description: "कोई प्रीफिक्स नहीं",
-  commandCategory: "बिना आदेश के",
-  usages: "बॉट के ऑनलाइन समय को देखें",
+  description: "nprfx",
+  commandCategory: "without cmmnd",
+  usages: "on tym",
   cooldowns: 5
 };
 
