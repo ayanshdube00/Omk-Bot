@@ -188,7 +188,7 @@ module.exports.handleEvent = async function ({ api, event, Users }) {
     "बोलिए सर 🫡",
     "bolo na bebie 😼",
     "सर 🫡",
-    "जी सर 🫡"
+    "han..baby bolo na kya karun tumhare liye_😌"
   ];
   const randAdminReply = adminReplies[Math.floor(Math.random() * adminReplies.length)];
 
@@ -200,7 +200,7 @@ module.exports.handleEvent = async function ({ api, event, Users }) {
   const messageBody = event.body.toLowerCase();
   if (messageBody.includes("bot") || 
       messageBody.includes("Bot") || 
-      messageBody.includes("Botwa")) {
+      messageBody.includes("bby")) {
     // Show typing indicator
     await api.sendTypingIndicator(threadID);
 
