@@ -188,7 +188,7 @@ module.exports.handleEvent = async function ({ api, event, Users }) {
     "बोलिए सर 🫡",
     "bolo na bebie 😼",
     "सर 🫡",
-    "han..baby bolo na kya karun tumhare liye_😌"
+    "han..boss bolo na kya kru tumhare lie_🙆🏻"
   ];
   const randAdminReply = adminReplies[Math.floor(Math.random() * adminReplies.length)];
 
