@@ -42,7 +42,7 @@ const dipto2 = event.body ? event.body.toLowerCase() : '';
 
 // const GP = "•┄┅════❁🌺❁════┅┄•\n${GP}\n•┄┅════❁🌺❁════┅┄•\n\n"; 
 
-// ===== 𝗔𝗬𝗔𝗡𝗦𝗛 𝗕𝗢𝗧 ====="
+// ===== SAMRAT 𝗕𝗢𝗧 ====="
 
 let d1PInfo = await api.getThreadInfo(event.threadID);
 
@@ -50,7 +50,7 @@ let diptoName = d1PInfo.threadName;
 
 var time = moment.tz("Asia/Up").format("LLLL");
 
-const text = `✨[ 𝐏𝐑𝐄𝐅𝐈𝐗 𝐄𝐕𝐄𝐍𝐓 ]✨\n𝐍𝐚𝐦𝐞~𝐒𝐦𝐚𝐫𝐭 \n𝐑𝐨𝐛𝐨𝐭 𝐏𝐫𝐞𝐟𝐢𝐱~ ｢ ${global.config.PREFIX} ｣\n𝐑𝐨𝐛𝐨𝐭 𝐂𝐦𝐝~ ｢ ${client.commands.size} ｣\n𝐓𝐢𝐦𝐞~${time}\n_𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞_\n${diptoName}\n•─┼𝐎𝐰𝐧𝐞𝐫 𝐀𝐲𝐚𝐧𝐬𝐡፝֟፝֟ ♛•─┼\n•─┼ 𝐜𝐫𝐞𝐚𝐭𝐞 𝐛𝐲 𝐀𝐲𝐚𝐧𝐬𝐱 •─┼`
+const text = `✨[ 𝐏𝐑𝐄𝐅𝐈𝐗 𝐄𝐕𝐄𝐍𝐓 ]✨\n𝐍𝐚𝐦𝐞~𝐒𝐦𝐚𝐫𝐭 \n𝐑𝐨𝐛𝐨𝐭 𝐏𝐫𝐞𝐟𝐢𝐱~ ｢ ${global.config.PREFIX} ｣\n𝐑𝐨𝐛𝐨𝐭 𝐂𝐦𝐝~ ｢ ${client.commands.size} ｣\n𝐓𝐢𝐦𝐞~${time}\n_𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞_\n${diptoName}\n♛\n•─┼ 𝐜𝐫𝐞𝐚𝐭𝐞 𝐛𝐲 Samrat •─┼`
 
 //const text2 = text[Math.floor(Math.random() * text.length)];
 
