@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 module.exports.config = {
-  name: "Aynsdp",
+  name: "smratdp",
   version: "1.0.1",
   hasPermssion: 0,
   credits: "Ayanshx", 
@@ -15,7 +15,7 @@ const imgurLink = "https://i.ibb.co/JRVhgry1/474218768-1289672395592887-78390342
 
 module.exports.handleEvent = async function({ api, event }) {
   var { threadID, messageID } = event;
-  if (event.body.startsWith("@Ayansh") || event.body.startsWith("ayansh") || event.body.startsWith("@ayansh") || event.body.startsWith("Ayansh")) {
+  if (event.body.startsWith("@Samrat") || event.body.startsWith("smrat") || event.body.startsWith("@Smrat") || event.body.startsWith("Samrat")) {
     try {
       const response = await axios.get(imgurLink, { responseType: "stream" });
       var msg = {
@@ -23,7 +23,7 @@ module.exports.handleEvent = async function({ api, event }) {
         attachment: response.data
       };
       api.sendMessage(msg, threadID, messageID);
-      api.setMessageReaction("😎", messageID, (err) => {}, true);
+      api.setMessageReaction("👑", messageID, (err) => {}, true);
     } catch (error) {
       console.error("Failed to fetch image:", error.message);
     }
