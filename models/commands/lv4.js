@@ -1,5 +1,5 @@
 module.exports.config = {
-  name: "lv4",
+  name: "lov4",
   version: "7.3.1",
   Permssion: 0,
   credits: "islamick chat",
