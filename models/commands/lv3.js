@@ -1,5 +1,5 @@
 module.exports.config = {
-  name: "lv3",
+  name: "lov3",
   version: "7.3.1",
   Permssion: 0,
   credits: "ARIF-BABU", 
