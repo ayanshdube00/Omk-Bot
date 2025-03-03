@@ -1,5 +1,5 @@
 module.exports.config = {
-  name: "porn",
+  name: "porngif",
   version: "3.2",
   hasPermssion: 2,
   credits: "@Hazeyy",
