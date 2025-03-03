@@ -1,6 +1,6 @@
 ///WARNING THIS BOT IS MADE BY MR PREM BABU AGAR KOI CREADIT NAME CHANGE KREGA USKA FILE BAN HO JAYEGA //////@prem-babu3608//////////
 module.exports.config = {
-    name: "lv",
+    name: "lov",
   version: "7.3.1",
   Permssion: 0,
   credits: "ARIF-BABU", 
