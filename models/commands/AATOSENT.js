@@ -1,7 +1,7 @@
 module.exports.config = {
 name: "autosend",
 version: "10.02",
-hasPermssion: 0,
+hasPermssion: ,
 credits: "tromoxx",
 description: "Set Karne Ke Bad Automatically Msg Send Karega",
 commandCategory: "group messenger",
